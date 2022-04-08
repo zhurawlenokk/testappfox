@@ -31,6 +31,22 @@ closeButtons.forEach(function (button) {
     });
 });
 
+const scrollToFooter = function scrollToFooter() {
+    const footer = document.querySelector('.footer')
+    footer.scrollIntoView({
+        behavior: "smooth"
+    });
+};
+
+const scrollButton = document.querySelector('.scroll_button');
+
+scrollButton.addEventListener('click', function (e) {
+    e.preventDefault;
+    scrollToFooter();
+})
+
+
+
 new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
