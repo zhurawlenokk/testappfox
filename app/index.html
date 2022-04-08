@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appfox</title>
+    <link rel="stylesheet" href="./sass/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="header_nav">
+                <div class="header_contacts">
+                    <a href="tel:+79770000000" class="header_nav_item">
+                        <div class="header_nav_item_img">
+                            <img src="./images/phone.svg" alt="" />
+                        </div>
+                        <span>+7 977 000-00-00</span>
+                    </a>
+                    <a href="mailto:support@mail.ru" class="header_nav_item">
+                        <div class="header_nav_item_img">
+                            <img src="./images/alternate_email.svg" alt="" />
+                        </div>
+                        <span>support@mail.ru</span>
+                    </a>
+                </div>
+                <div class="header_buttons">
+                    <div class="header_button nav_button header_button--enter">
+                        <div class="header_button_img">
+                            <svg class="button_svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3" d="M7 19.5H13V5.5H7V19.5ZM10 11.5H12V13.5H10V11.5Z"
+                                    fill="#FFAB00" />
+                                <path
+                                    d="M19 19.5V4.5H15V3.5H5V19.5H3V21.5H15V6.5H17V21.5H21V19.5H19ZM13 19.5H7V5.5H13V19.5ZM10 11.5H12V13.5H10V11.5Z"
+                                    fill="#FFAB00" />
+                            </svg>
+                        </div>
+                        <span>Войти</span>
+                    </div>
+                    <a class="header_button nav_button header_button--partnership">
+                        <div class="header_button_img">
+                            <svg class="button_svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3"
+                                    d="M8 15.5C5.3 15.5 2.2 16.79 2 17.51V18.5H14V17.5C13.8 16.79 10.7 15.5 8 15.5Z"
+                                    fill="#FFAB00" />
+                                <path opacity="0.3"
+                                    d="M8 10.5C9.10457 10.5 10 9.60457 10 8.5C10 7.39543 9.10457 6.5 8 6.5C6.89543 6.5 6 7.39543 6 8.5C6 9.60457 6.89543 10.5 8 10.5Z"
+                                    fill="#FFAB00" />
+                                <path d="M22 9.5V7.5H20V9.5H18V11.5H20V13.5H22V11.5H24V9.5H22Z" fill="#FFAB00" />
+                                <path
+                                    d="M8 12.5C10.21 12.5 12 10.71 12 8.5C12 6.29 10.21 4.5 8 4.5C5.79 4.5 4 6.29 4 8.5C4 10.71 5.79 12.5 8 12.5ZM8 6.5C9.1 6.5 10 7.4 10 8.5C10 9.6 9.1 10.5 8 10.5C6.9 10.5 6 9.6 6 8.5C6 7.4 6.9 6.5 8 6.5Z"
+                                    fill="#FFAB00" />
+                                <path
+                                    d="M8 13.5C5.33 13.5 0 14.84 0 17.5V20.5H16V17.5C16 14.84 10.67 13.5 8 13.5ZM14 18.5H2V17.51C2.2 16.79 5.3 15.5 8 15.5C10.7 15.5 13.8 16.79 14 17.5V18.5Z"
+                                    fill="#FFAB00" />
+                                <path
+                                    d="M12.51 4.5498C13.43 5.6098 14 6.9898 14 8.4998C14 10.0098 13.43 11.3898 12.51 12.4498C14.47 12.1998 16 10.5398 16 8.4998C16 6.4598 14.47 4.7998 12.51 4.5498Z"
+                                    fill="#FFAB00" />
+                                <path
+                                    d="M16.53 14.3301C17.42 15.1601 18 16.2001 18 17.5001V20.5001H20V17.5001C20 16.0501 18.41 14.9901 16.53 14.3301Z"
+                                    fill="#FFAB00" />
+                            </svg>
+                        </div>
+                        <span>Стать партнером</span>
+                    </a>
+                </div>
+
+            </nav>
+            <div class="header_img">
+                <picture>
+                    <source srcset="../images/header_phone_tablet.png" media="(max-width: 1200px)" />
+                    <img src="./images/header_phone.png" alt="" />
+                </picture>
+            </div>
+            <div class="scroll_button">
+                <img src="./images/arrow.svg" alt="" />
+            </div>
+            <div class="header_socials">
+                <a class="header_socials_item" href="#" target="_blank">
+                    <img src="./images/inst.svg" alt="" />
+                </a>
+                <a class="header_socials_item" href="#" target="_blank">
+                    <img src="./images/vk.svg" alt="" />
+                </a>
+                <a class="header_socials_item" href="#" target="_blank">
+                    <img src="./images/fb.svg" alt="" />
+                </a>
+            </div>
+        </header>
+        <main class="main">
+            <section class="download">
+                <div class="content_wrap">
+                    <div class="download_phone">
+                        <img src="./images/download_phone.png" alt="" />
+                    </div>
+                    <div class="download_content">
+                        <div class="title_wrap">
+                            <h2 class="main_title"><span class="title--orange">Где</span> скачать</h2>
+                            <div class="main_title_icon">
+                                <img src="./images/rocket.jpg" alt="" />
+                            </div>
+                        </div>
+                        <p class="content_text">Скачивайте приложение и создавайте свое виртуальное кафе с
+                            электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте
+                            свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа Скачивайте
+                            приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и
+                            возможностью предзаказа </p>
+                        <div class="content_buttons">
+                            <a href="#" class="link_button">
+                                <img src="./images/button_left.jpg" alt="" />
+                            </a>
+                            <a href="#" class="link_button">
+                                <img src="./images/button_right.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rest">
+                <div class="rest_phone">
+                    <img src="./images/rest_phone_m.png" alt="" />
+                </div>
+                <div class="rest_content">
+                    <div class="title_wrap">
+                        <h2 class="title title--white title--rest"><span class="title--orange">Ваши</span> любимые
+                            рестораны онлайн</h2>
+                        <div class="title_icon title_icon--rest">
+                            <img src="./images/phone.png" alt="" />
+                        </div>
+                    </div>
+                    <p class="content_text content_text--white">Скачивайте приложение и создавайте свое виртуальное
+                        кафе с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и
+                        создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа</p>
+                    <div class="numbers_row">
+                        <div class="numbers_item">
+                            <b class="numbers_item_count">1740 +</b>
+                            <p class="numbers_item_text">Скачиваний</p>
+                        </div>
+                        <div class="numbers_item">
+                            <b class="numbers_item_count">12 +</b>
+                            <p class="numbers_item_text">Ресторанов</p>
+                        </div>
+                        <div class="numbers_item">
+                            <b class="numbers_item_count">ДО 90%</b>
+                            <p class="numbers_item_text">Cкидки</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="platform">
+                <div class="content_wrap">
+                    <div class="platform_content">
+                        <div class="title_wrap">
+                            <h2 class="title title--world"><span class="title--orange">Единая платформа</span> ДЛЯ
+                                всей россии</h2>
+                            <div class="title_icon title_icon--world">
+                                <img src="./images/world.png" alt="" />
+                            </div>
+                        </div>
+                        <p class="content_text content_text--smaller">Скачивайте приложение и создавайте свое
+                            виртуальное кафе электронным меню, доставкой и возможностью предзаказа Скачивайте
+                            приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и
+                            возможностью предзаказаСкачивайте приложение и создавайте свое виртуальное кафе</p>
+                    </div>
+                    <div class="map">
+                        <img src="./images/map.png" alt="" />
+                    </div>
+                </div>
+            </section>
+            <section class="delivery">
+                <div class="content_wrap">
+                    <div class="delivery_pic">
+                        <picture>
+                            <source srcset="../images/delivery_woman_m.png"
+                                media="(min-width: 320px) and (max-width: 567px)" />
+                            <source srcset="../images/delivery_woman_tablet.png" media="(max-width: 1200px)" />
+                            <img src="./images/delivery_woman.png" alt="" />
+                        </picture>
+                    </div>
+                    <div class="delivery_content">
+                        <div class="title_wrap">
+                            <h2 class="title title--white title--delivery">у нАС ЕСТЬ ДОСТАВКА</h2>
+                            <div class="title_icon title_icon--delivery">
+                                <img src="./images/helic.png" alt="" />
+                            </div>
+                        </div>
+                        <p class="content_text content_text--white">Скачивайте приложение и создавайте свое
+                            виртуальное кафе
+                            с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и
+                            создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа
+                            виртуальное кафе с электронным меню, доставкой</p>
+                    </div>
+                </div>
+            </section>
+            <section class="qa">
+                <div class="content_wrap">
+                    <div class="qa_content">
+                        <div class="title_wrap">
+                            <h2 class="title title--black title--qa">Часто задаваемыe <span
+                                    class="title--orange">вопросы</span>
+                            </h2>
+                            <div class="title_icon title_icon--qa">
+                                <img src="./images/cookie.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="accordeon">
+                            <div class="accordeon_item">
+                                <div class="accordeon_title">Вопрос в несколько слов
+                                    <div class="accordeon_arrow">
+                                        <img src="./images/acc_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="accordeon_text">Скачивайте приложение и создавайте свое виртуальное кафе с
+                                    электронным меню, доставкой и возможностью предзаказа Скачивайте приложение
+                                    и создавайте свое виртуальное кафе</p>
+                            </div>
+                            <div class="accordeon_item">
+                                <div class="accordeon_title">
+                                    Вопрос в несколько строк
+                                    <div class="accordeon_arrow">
+                                        <img src="./images/acc_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="accordeon_text">Скачивайте приложение и создавайте свое виртуальное кафе с
+                                    электронным меню, доставкой и возможностью предзаказа Скачивайте приложение
+                                    и создавайте свое виртуальное кафе</p>
+                            </div>
+                            <div class="accordeon_item">
+                                <div class="accordeon_title">
+                                    Вопрос в несколько букв
+                                    <div class="accordeon_arrow">
+                                        <img src="./images/acc_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="accordeon_text">Скачивайте приложение и создавайте свое виртуальное кафе с
+                                    электронным меню, доставкой и возможностью предзаказа Скачивайте приложение
+                                    и создавайте свое виртуальное кафе</p>
+                            </div>
+                            <div class="accordeon_item">
+                                <div class="accordeon_title">
+                                    Вопрос в несколько символов
+                                    <div class="accordeon_arrow">
+                                        <img src="./images/acc_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="accordeon_text">Скачивайте приложение и создавайте свое виртуальное кафе с
+                                    электронным меню, доставкой и возможностью предзаказа Скачивайте приложение
+                                    и создавайте свое виртуальное кафе</p>
+                            </div>
+                            <div class="accordeon_item">
+                                <div class="accordeon_title">
+                                    Вопрос в несколько слов
+                                    <div class="accordeon_arrow">
+                                        <img src="./images/acc_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="accordeon_text">Скачивайте приложение и создавайте свое виртуальное кафе с
+                                    электронным меню, доставкой и возможностью предзаказа Скачивайте приложение
+                                    и создавайте свое виртуальное кафе</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_pic">
+                        <img src="./images/qa_woman.png" alt="" />
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="content_wrap">
+                    <div class="reviews_phone">
+                        <img src="./images/reviews_phone.png" alt="" />
+                    </div>
+                    <div class="reviews_content">
+                        <div class="title_wrap">
+                            <h2 class="title title--white title--reviews">отзывы</h2>
+                            <div class="title_icon title_icon--reviews">
+                                <img src="./images/sparkle.png" alt="" />
+                            </div>
+                        </div>
+                        <p class="content_text content_text--white">Скачивайте приложение и создавайте свое
+                            виртуальное афеэлектронным меню, доставкой и возможностью предзаказа:</p>
+                        <div class="reviews_slider">
+                            <div class="swiper-pagination reviews_slider_pagination"></div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="slide_text">Скачивайте приложение и создавайте свое виртуальное
+                                            афеэлектронным меню, доставкой и возможностью предзаказа приложение и
+                                            создавайте свое виртуальное афеэлектронным меню, доставкой и
+                                            возможностью предзаказа приложение и создавайте свое виртуальное
+                                            афеэлектронным меню, доставкой и возможностью предзаказа</p>
+                                        <b class="slide_name">Андрей мирнов, Клиент</b>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="slide_text">Скачивайте приложение и создавайте свое виртуальное
+                                            афеэлектронным меню, доставкой и возможностью предзаказа приложение и
+                                            создавайте свое виртуальное афеэлектронным меню, доставкой и
+                                            возможностью предзаказа приложение и создавайте свое виртуальное
+                                            афеэлектронным меню, доставкой и возможностью предзаказа</p>
+                                        <b class="slide_name">Андрей мирнов, Клиент</b>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="slide_text">Скачивайте приложение и создавайте свое виртуальное
+                                            афеэлектронным меню, доставкой и возможностью предзаказа приложение и
+                                            создавайте свое виртуальное афеэлектронным меню, доставкой и
+                                            возможностью предзаказа приложение и создавайте свое виртуальное
+                                            афеэлектронным меню, доставкой и возможностью предзаказа</p>
+                                        <b class="slide_name">Андрей мирнов, Клиент</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="title_wrap">
+                    <h2 class="title title--darkgrey title--contact">Связаться с нами</h2>
+                    <div class="title_icon title_icon--contact">
+                        <img src="./images/heart.png" alt="" />
+                    </div>
+                </div>
+                <p class="content_text">Вы можете связаться с нами по любому вопросу</p>
+                <form action="#" class="contact_form">
+                    <input type="text" placeholder="Ваше имя" class="contact_form_input">
+                    <input placeholder="Телефон" class="contact_form_input">
+                    <input type="email" placeholder="E-mail" class="contact_form_input">
+                    <button type="submit" class="contact_form_button">отправить</button>
+                </form>
+                <p class="privacy">Нажимая на кнопку “Отправить” вы соглашаетесь с <a href="#"
+                        class="privacy_link">политикой конфиденциальности</a></p>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="content_wrap">
+                <div class="footer_logo">
+                    <img src="./images/footer_logo.png" alt="" />
+                </div>
+                <nav class="footer_nav">
+                    <div class="footer_contacts">
+                        <a href="tel:+79770000000" class="footer_nav_item footer_nav_item--phone">
+                            <div class="footer_nav_item_img">
+                                <img src="./images/phone.svg" alt="" />
+                            </div>
+                            <span>+7 977 000-00-00</span>
+                        </a>
+                        <a href="mailto:support@mail.ru" class="footer_nav_item footer_nav_item--email">
+                            <div class="footer_nav_item_img">
+                                <img src="./images/alternate_email.svg" alt="" />
+                            </div>
+                            <span>support@mail.ru</span>
+                        </a>
+                        <a href="#" class="footer_nav_item footer_nav_item--enter">
+                            <div class="footer_nav_item_img">
+                                <svg class="button_svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.3" d="M7 19.5H13V5.5H7V19.5ZM10 11.5H12V13.5H10V11.5Z"
+                                        fill="#FFAB00" />
+                                    <path
+                                        d="M19 19.5V4.5H15V3.5H5V19.5H3V21.5H15V6.5H17V21.5H21V19.5H19ZM13 19.5H7V5.5H13V19.5ZM10 11.5H12V13.5H10V11.5Z"
+                                        fill="#FFAB00" />
+                                </svg>
+                            </div>
+                            <span>войти</span>
+                        </a>
+                        <a href="#" class="footer_nav_item footer_nav_item--partnership">
+                            <div class="footer_nav_item_img">
+                                <svg class="button_svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.3"
+                                        d="M8 15.5C5.3 15.5 2.2 16.79 2 17.51V18.5H14V17.5C13.8 16.79 10.7 15.5 8 15.5Z"
+                                        fill="#FFAB00" />
+                                    <path opacity="0.3"
+                                        d="M8 10.5C9.10457 10.5 10 9.60457 10 8.5C10 7.39543 9.10457 6.5 8 6.5C6.89543 6.5 6 7.39543 6 8.5C6 9.60457 6.89543 10.5 8 10.5Z"
+                                        fill="#FFAB00" />
+                                    <path d="M22 9.5V7.5H20V9.5H18V11.5H20V13.5H22V11.5H24V9.5H22Z" fill="#FFAB00" />
+                                    <path
+                                        d="M8 12.5C10.21 12.5 12 10.71 12 8.5C12 6.29 10.21 4.5 8 4.5C5.79 4.5 4 6.29 4 8.5C4 10.71 5.79 12.5 8 12.5ZM8 6.5C9.1 6.5 10 7.4 10 8.5C10 9.6 9.1 10.5 8 10.5C6.9 10.5 6 9.6 6 8.5C6 7.4 6.9 6.5 8 6.5Z"
+                                        fill="#FFAB00" />
+                                    <path
+                                        d="M8 13.5C5.33 13.5 0 14.84 0 17.5V20.5H16V17.5C16 14.84 10.67 13.5 8 13.5ZM14 18.5H2V17.51C2.2 16.79 5.3 15.5 8 15.5C10.7 15.5 13.8 16.79 14 17.5V18.5Z"
+                                        fill="#FFAB00" />
+                                    <path
+                                        d="M12.51 4.5498C13.43 5.6098 14 6.9898 14 8.4998C14 10.0098 13.43 11.3898 12.51 12.4498C14.47 12.1998 16 10.5398 16 8.4998C16 6.4598 14.47 4.7998 12.51 4.5498Z"
+                                        fill="#FFAB00" />
+                                    <path
+                                        d="M16.53 14.3301C17.42 15.1601 18 16.2001 18 17.5001V20.5001H20V17.5001C20 16.0501 18.41 14.9901 16.53 14.3301Z"
+                                        fill="#FFAB00" />
+                                </svg>
+                            </div>
+                            <span>Cтать партнером</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

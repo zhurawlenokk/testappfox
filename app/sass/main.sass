@@ -1,0 +1,1511 @@
+@import 'fonts.css'
+@import 'normalize.css'
+@import 'variables.sass'
+@import 'mixins.sass'
+    
+* 
+    box-sizing: border-box
+    
+body 
+    margin: 0
+    padding: 0
+    font-family: 'Roboto'
+    color: $color-grey
+
+h1,
+h2,
+h3,
+h4,
+h5 
+    margin: 0
+
+p 
+    margin: 0
+
+img 
+    user-select: none
+    vertical-align: bottom
+    display: block
+    height: auto
+    width: 100%
+
+.container 
+    margin: 0 auto
+    max-width: 1440px
+    width: 100%
+
+.header
+    background: url('../images/header_final_2.png') no-repeat
+    background-size: 100%
+    padding: 1% 1.9%
+    position: relative
+
+    &_contacts 
+        display: flex
+
+    &_buttons 
+        display: flex
+        justify-content: space-between
+
+    &_button 
+        background: #fff
+        border-radius: 100px
+        padding: 11px 25px
+        outline: none
+        border: none
+        display: flex
+        align-items: center
+        color: $color-yellow
+        font-weight: 700
+        font-size: 18px
+        line-height: 0.5
+        margin: 0 5px
+        cursor: pointer
+
+        &:hover
+            box-shadow: 2px 3px 13px 5px rgba(247, 98, 15, 0.52)
+
+        &_img 
+            margin-right: 10px
+
+    &_nav 
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        padding: 0 133px 0 417px
+
+        &_item 
+            display: flex
+            @include links
+            align-items: center
+            margin: 0 17px
+            font-size: 16px
+            line-height: 0.5
+            color: #fff
+            cursor: pointer
+
+            &_img 
+                margin-right: 5px
+
+    &_socials 
+        display: flex
+        flex-direction: column
+        position: absolute
+        right: 27px
+        top: 33.5%
+        z-index: 2
+
+        &_item 
+            margin-bottom: 14px
+
+            &:last-child
+                margin-bottom: 0
+
+            &:hover
+                transform: translateX(-20px)
+                transition: all 1.5s ease
+
+    &_img 
+        position: relative
+        margin: 5.4% auto 0
+        width: fit-content
+        max-width: 288px
+        border-radius: 43px
+        box-shadow: 0px 0px 140px 0px #FFFFFF
+        z-index: 2
+
+        &::before 
+            content: ''
+            display: block
+            position: absolute
+            width: 137px
+            height: 137px
+            right: -84px
+            top: -63px
+            background: url('../images/header_round_top.png') no-repeat
+            z-index: -1 
+
+        &::after 
+            content: ''
+            display: block
+            position: absolute
+            width: 178px
+            height: 178px
+            right: -156px
+            bottom: -4px
+            background: url('../images/header_round_bottom.png') no-repeat
+            background-size: 100%
+            z-index: -1
+
+.scroll_button 
+    background: url('../images/button.png') no-repeat
+    background-size: 100%
+    width: 93px
+    height: 95px
+    padding: 40px 0 36px
+    cursor: pointer
+    margin: 0.4% auto 0
+
+    img 
+        position: relative
+        z-index: 2
+        width: 19px
+        margin: 0 auto
+
+    &:hover 
+        animation-duration: 3s
+        transition: 1s
+        animation-name: scrollArrow
+
+@keyframes scrollArrow
+    0%
+        transform: translate(0, -40px)
+
+    100%
+        transform: translate(0, 40px)
+        
+.download 
+    padding: 0 12%
+    margin-top: 8.2%
+    color: $color-light-grey
+
+    &_phone 
+        max-width: 343px
+        margin-top: -134px
+        position: relative
+
+        &::before 
+            content: ''
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            bottom: 0
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 62.46%, #FFFFFF 100%)
+
+        &::after 
+            content: ''
+            display: block
+            position: absolute
+            right: -3px
+            top: -82px
+            background: url('../images/phone_round.png') no-repeat
+            z-index: -1
+            width: 164px
+            height: 164px
+
+    &_content 
+        max-width: 57.3%
+
+.content_buttons 
+    @include flex
+    margin-top: 11.5%
+    max-width: 72%
+
+.content_wrap 
+    @include flex
+
+.title
+    font-family: 'Ubuntu'
+    font-weight: 700
+    font-size: 32px
+    line-height: 1.2
+    letter-spacing: -0.03em
+    text-transform: uppercase
+    position: relative
+    color: #000
+
+    &_wrap
+        display: flex
+
+    &--orange 
+        color: $color-orange
+
+    &--white 
+        color: #fff
+
+    &--black 
+        color: #000
+
+    &--darkgrey
+        color: $color-dark-grey
+
+    &_icon
+        width: 30px
+        height: 30px
+
+        &--rest
+            margin-left: -153px
+            margin-top: 1px
+
+        &--world
+            margin-top: 42px
+            margin-left: -57px
+
+        &--delivery
+            margin-top: 1px
+            margin-left: 18px
+
+        &--qa
+            margin-top: 39px
+            margin-left: -258px
+
+        &--reviews
+            margin-left: 10px
+
+        &--contact
+            margin-top: 2px
+            margin-left: 13px
+
+    &--rest
+        margin-bottom: 3.7%
+        max-width: 80%
+
+    &--world
+        margin-bottom: 6%
+        color: #000
+        max-width: 77%
+            
+    &--delivery
+        margin-bottom: 4.1%
+
+    &--qa 
+        margin-bottom: 4%
+        max-width: 80%
+            
+    &--reviews 
+        margin-bottom: 3%
+
+    &--contact
+        margin-bottom: 0.6%
+
+.main_title 
+    font-family: 'Ubuntu'
+    font-weight: 700
+    font-size: 42px
+    line-height: 1.15
+    color: $color-grey
+    position: relative
+    text-transform: uppercase
+    letter-spacing: -0.03em
+    margin-bottom: 4%
+
+    &_icon
+        width: 30px
+        height: 30px
+        background: url('../images/rocket.png') no-repeat
+        background-size: 100%
+        margin-left: 16px
+        margin-top: 8px
+            
+.content_text 
+    font-size: 18px
+    line-height: 1.5
+
+    &--white
+        color: #fff
+        font-size: 14px
+        line-height: 1.5
+
+    &--smaller
+        font-size: 14px
+        line-height: 1.5
+
+.rest 
+    background: url('../images/fix_bg.png') no-repeat
+    background-size: 100%
+    padding: 6.1% 0 10% 11.5%
+    color: #fff
+    margin-top: -86px
+
+    &_content
+        max-width: 43.3%
+        margin-top: 15.2%
+    
+    .content_wrap 
+        flex-wrap: nowrap
+
+    &_phone
+        display: none
+
+.numbers_row 
+    @include flex
+    margin-top: 3.7%
+    max-width: 80.5%
+    
+.numbers_item
+    &_count 
+        font-weight: 600
+        font-size: 37px
+        line-height: 1.1
+        display: block
+        margin-bottom: 2.5%
+
+    &_text
+        font-size: 18px
+        line-height: 1.1
+
+.platform
+    padding: 0 11.6% 0 11.4%
+    margin-top: 6.7%
+
+    .content_wrap
+        flex-wrap: nowrap
+
+    &_content
+        max-width: 45%
+
+    .content_text
+        max-width: 87%
+
+.map 
+    max-width: 633px
+    margin-top: -4.8%
+    flex-shrink: 0
+
+.delivery
+    background: url('../images/delivery_bg.png') no-repeat
+    background-size: 100%
+    margin-top: 2.9%
+    padding: 0 0 0 11.5%
+
+    &_pic
+        max-width: 540px
+
+    &_content
+        max-width: 55.4%
+        margin-top: 12.9%
+
+    .content_text
+        max-width: 71%
+
+.qa
+    padding: 0 11.5%
+
+
+    &_content
+        margin-top: 16.6%
+        max-width: 48.5%
+
+    &_pic
+        max-width: 523px
+
+.accordeon 
+    width: 539px
+    max-width: 100%
+
+    &_item 
+        margin-bottom: 5px
+        transition: 0.5s
+
+        &:last-child
+            margin-bottom: 0
+
+    &_title
+        display: flex
+        justify-content: space-between
+        border-radius: 5px
+        box-shadow: 4px 4px 30px 0px #0000001A
+        font-weight: 700
+        font-size: 16px
+        line-height: 1.6
+        padding: 6px 3px 5px 11px
+
+    &_arrow
+        cursor: pointer 
+        width: 24px
+        transform: rotate(180deg)
+        transition: 1s
+
+    &_text
+        font-size: 14px
+        line-height: 1.7
+        padding-left: 10px
+        display: none
+            
+.accordeon_item
+    &--active 
+        margin-bottom: 17px
+
+        &:checked
+            transition: 0.5s
+
+        .accordeon_text
+            transition: 0.5s
+            display: block
+            padding-top: 10px
+            
+        .accordeon_arrow
+            transform: none
+            transition: all 0.5s ease
+
+.reviews 
+    background: url('../images/reviews_bg.jpg') no-repeat
+    padding: 0 13.5% 10% 13.2%
+    margin-top: 2%
+    background-size: cover
+
+    &_content
+        max-width: 48.3%
+        color: #fff
+        align-self: center
+        margin-top: 0.8%
+
+    .content_text
+        max-width: 85%
+
+    &_phone
+        max-width: 479px
+        margin-top: -1.4%
+
+    &_slider
+        margin-top: 4%
+
+        &_pagination
+            top: 0
+            position: relative
+            left: 0
+            bottom: unset
+            text-align: left
+
+        .swiper-slide
+            overflow: hidden
+
+.slide
+    &_text 
+        font-family: 'Times New Roman'
+        font-style: italic
+        font-size: 16px
+        line-height: 1.5
+        margin: 3.2% 0 1.9%
+        max-width: 87%
+    
+    &_name 
+        text-align: right
+        font-size: 14px
+        line-height: 1.5
+        display: block
+        margin-right: 65px
+
+.swiper-pagination-bullet 
+    height: 16px
+    width: 16px
+    background: #fff
+    margin: 0 3px !important
+
+    &-active
+        width: 81px
+        border-radius: 99px
+        transition: all 0.5s ease
+
+.contact 
+    max-width: 77%
+    margin: 2.9% auto 0
+    box-shadow: 0px 4px 40px 0px #0000001A
+    border-radius: 15px
+    padding: 1.9% 2% 2.3%
+
+    .content_text
+        font-size: 14px
+        line-height: 1.5
+
+    &_form 
+        margin-top: 20px
+        @include flex
+
+        &_input
+            border: none
+            outline: none
+            border-radius: 8px
+            background: #EEEFF2
+            padding: 11px
+            min-width: 255px
+            color: $color-grey
+            align-self: flex-start
+
+        &_button
+            color: #fff
+            text-align: center
+            font-weight: 900
+            text-transform: uppercase
+            background: $color-red
+            border-radius: 8px
+            border: none
+            outline: none
+            padding: 26px 52px 24px
+            
+            &:hover
+                background: $color-yellow
+
+.privacy 
+    margin-top: -17px
+    color: #565656
+
+    &_link 
+        color: inherit
+
+.footer 
+    background: $color-yellow
+    padding: 0.8% 11.4%
+    margin-top: 8.3%
+
+    &_contacts
+        display: flex
+
+    &_logo 
+        max-width: 37px
+
+    &_nav
+        @include flex
+        
+        &_item
+            color: #fff
+            background: none
+            font-weight: 700
+            font-size: 16px
+            line-height: 1.7
+            text-decoration: none
+            display: flex
+            margin: 0 14.5px
+            align-items: center
+
+            &_img 
+                width: 24px
+                height: 24px
+                margin-right: 5px
+
+            &--partnership
+                display: none
+                
+                &:hover
+                    box-shadow: 2px 3px 13px 5px rgba(247, 98, 15, 0.52)
+
+            &--enter
+                background: #fff
+                border-radius: 100px
+                color: $color-yellow
+                font-weight: 700
+                padding: 7px 27px
+                margin-left: 87px
+                margin-right: 2px
+                display: flex
+
+                .footer_nav_item_img
+                    display: none
+                
+                &:hover
+                    box-shadow: 2px 3px 13px 5px rgba(247, 98, 15, 0.52)
+
+@media (max-width: 1400px) 
+    .header
+        &_nav 
+            padding: 0 8% 0 19%
+
+        &_socials 
+            top: 28.5%
+
+    .download 
+        padding: 0 4%
+
+    .rest 
+        padding: 10% 0 11% 10%
+
+        &_content 
+            margin-top: 11%
+
+    .platform
+        padding: 0 8.5%
+
+        &_content
+            max-width: 100%
+
+    .map
+        margin-top: 0
+        flex-shrink: 1
+
+    .content_buttons
+        margin-top: 3.5%
+
+    .title 
+        &_icon
+            &--rest
+                margin-left: -98px
+            
+            &--delivery
+                margin-top: 1px
+                margin-left: 19px
+
+            &--qa
+                margin-top: 42px
+
+            &--world
+                margin-top: 43px
+                margin-left: -105px
+
+        &--rest
+            max-width: 71%
+            margin-bottom: 3%
+
+        &--world 
+            max-width: 57%
+            
+    .delivery
+        &_pic
+            max-width: 450px
+            margin-top: 40px
+
+    .qa
+        &_pic
+            max-width: 450px
+
+    .reviews
+        padding: 0 8% 12% 9.5%
+
+        &_phone
+            max-width: 450px
+
+        &_slider
+            padding-bottom: 11%
+
+    .slide
+        &_text
+            max-width: 100%
+
+    .contact
+        max-width: 89%
+
+@media (max-width: 1200px)
+
+    .header
+        background: url('../images/header_bg_tablet.png') no-repeat
+        background-size: 100%
+        padding: 1% 2% 15%
+
+        &_button
+            padding: 9px 23px
+            font-size: 16px
+
+        &_nav
+            padding: 0 50px
+            justify-content: flex-end
+
+            &_item
+                span
+                    display: none
+
+        &_img
+            max-width: 258px
+            border-radius: 50px
+            margin: 9.4% auto 0
+            border-radius: 0
+            box-shadow: none
+
+            &::before
+                display: none
+    
+            &::after
+                display: none
+                
+
+        &_socials
+            top: 59.5%
+
+    .scroll_button
+        display: none
+
+    .title
+        font-size: 28px
+
+        &_icon
+            &--rest
+                margin-top: 0
+                margin-left: -80px
+
+            &--world
+                margin-left: 9px
+                margin-top: 0
+
+            &--qa
+                margin-left: -244px
+                margin-top: 35px
+
+        &--world
+            margin-bottom: 2%
+            max-width: unset
+                
+    .main_title
+        font-size: 38px
+  
+    .download
+        padding: 0 9.6% 0 9.5%
+        margin-top: 1%
+
+        &_content
+            max-width: 66.3%
+
+        &_phone
+            max-width: 200px
+            margin-top: 0
+
+            &::after
+                display: none
+
+    .content_buttons
+        max-width: 85%
+        margin-top: 6%
+
+    .rest
+        margin-top: 6%
+        background-size: cover
+
+        &_content
+            margin-top: 10%
+
+    .numbers_row
+        max-width: 100%
+
+    .numbers_item
+        &_count
+            font-size: 32px
+
+    .platform
+        padding: 0 12%
+        margin-top: 2%
+
+        .content_wrap
+            flex-wrap: wrap
+
+        &_content
+            max-width: 100%
+
+    .map
+        margin: 5% auto 0
+
+    .delivery   
+        padding: 0 0 18% 9%
+        background: url('../images/delivery_bg_tablet.png') no-repeat
+        background-size: 100%
+
+        &_content
+            max-width: 60.2%
+            margin-top: 10%
+            margin-left: auto
+
+        &_pic
+            display: none
+
+    .qa
+        padding: 0 8%
+
+        &_pic
+            max-width: 379px
+
+    .reviews
+        padding: 0 5% 17%
+        background: url('../images/reviews_bg_tablet.jpg') no-repeat
+        background-size: 100%
+
+        &_phone
+            max-width: 480px
+
+        &_content
+            max-width: 53%
+            margin-top: 12%
+
+    .contact
+        &_form
+            &_input
+                width: 100%
+                margin-bottom: 15px
+
+    .privacy
+        margin-top: 15px
+
+    .footer_nav_button
+        margin-left: 20px
+
+@media (max-width: 992px)
+    .header
+        padding: 1.8% 2% 17%
+        background: url('../images/header_bg_768.png') no-repeat
+        background-size: 100%
+        
+        &_img
+            max-width: 254px
+            box-shadow: none
+            margin-top: 11px
+            position: relative
+            left: -22px
+
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                width: 124%
+                height: 145px
+                bottom: -35px
+                right: -75px
+                background: url('../images/header_phone_rounds_768.png') no-repeat
+                background-size: 96%
+                z-index: 2
+
+        &_socials
+            top: 39.6%
+
+        &_nav
+            padding: 0 95px
+
+            &_item
+                margin: 0 5px
+
+                span
+                    display: none
+
+                &_img
+                    width: 24px
+                    height: 24px
+
+        &_button
+            font-size: 18px
+            padding: 11px 25px
+            margin: 0 3px
+
+            &--enter
+                order: 1
+                background: none
+                padding: 0
+                font-size: 0
+                line-height: 0
+            
+                svg path
+                    fill: #fff
+                    width: 24px
+                    height: 24px
+
+            &--partnership
+               order: 2
+
+    .scroll_button
+        display: none
+
+    .main_title
+        font-size: 16px
+        color: #0E283C
+        margin-bottom: 2.5%
+
+        &_icon
+            width: 20px
+            height: 20px
+            left: 22%
+            top: -3px
+
+    .title
+        font-size: 16px
+
+        &_icon
+            width: 20px
+            height: 20px
+
+            &--rest
+                margin-left: 0
+
+            &--delivery
+                margin-top: -4px
+                margin-left: 10px
+
+            &--qa
+                margin-top: -2px
+                margin-left: 1%
+
+            &--contact
+                margin-top: 0
+                margin-left: 6px
+
+        &--rest
+            max-width: 100%
+            margin-bottom: 4%
+
+        &--world
+            margin-bottom: 2.6%
+            max-width: 100%
+
+            .title_icon
+                top: -2px
+                left: 47%
+
+        &--delivery
+            margin-bottom: 3.5%
+
+        &--qa
+            margin-bottom: 5%
+
+        &--reviews
+            margin-bottom: 4.6%
+
+        &--contact
+            margin-bottom: 5.9%
+    
+    .content_text 
+        font-size: 14px
+        max-width: unset
+
+    .download
+        margin-top: 1.7%
+        padding: 0 9.6% 0 14.5%
+
+        &_phone
+            max-width: 160px
+            margin-top: -19px
+
+        &_content
+            max-width: 67.1%
+
+        .content_text
+            max-width: 88%
+
+    .content_buttons
+        max-width: 65%
+        margin-top: 2%
+
+    .link_button
+        max-width: 117px
+
+    .numbers_item
+        &_count
+            font-size: 16px
+            line-height: 19px
+            margin-bottom: 0.5%
+
+        &_text
+            font-size: 14px
+            line-height: 16px
+
+    .numbers_row
+        max-width: 73%
+        margin-top: 4.7%
+
+    .rest
+        background: url('../images/rest_bg_tablet.png') no-repeat
+        background-size: 100%
+        margin-top: -3.4%
+
+        &_content
+            margin-top: 18.2%
+            max-width: 53.3%
+
+    .platform
+        margin-top: 3.4%
+        padding: 0 14.8%
+
+        .content_text
+            max-width: 94%
+
+    .map
+        margin: -1% auto 0
+
+    .delivery
+        background: url('../images/delivery_tablet.png') no-repeat
+        background-size: 100%
+        margin-top: -2.1%
+        padding: 0 0 16% 14.7%
+
+        .content_wrap
+            justify-content: flex-end
+
+        &_pic
+            display: none
+
+        &_content
+            max-width: 70.9%
+            margin-top: 9.5%
+
+
+        .content_text
+            max-width: 75%
+
+    .qa
+        margin-top: 1.8%
+        padding: 0 14.7%
+
+        &_pic
+            display: none
+
+        &_content
+            max-width: 100%
+            width: 100%
+            margin-top: 0
+
+        .content_wrap
+            justify-content: center
+
+    .accordeon_item--active 
+        .accordeon_text 
+            margin-top: 13px
+            
+    .accordeon_title 
+        padding: 6px 8px 5px 11px
+
+    .reviews
+        margin-top: 1.5%
+        padding: 0 14.7% 21%
+
+        &_phone
+            display: none
+
+        &_content
+            max-width: 100%
+            width: 100%
+
+        .content_text
+            max-width: 100%
+        
+        &_slider
+            padding-bottom: 0
+
+    .slide_text 
+        font-size: 14px
+        margin: 3% 0 1% 0
+
+    .contact
+        max-width: 53%
+        margin-top: -6.3%
+        padding: 3.2% 3.5% 2.3%
+        position: relative
+        z-index: 2
+        background: #fff
+
+        &_form
+            margin-top: 16px
+
+            &_button
+                width: 100%
+                padding: 14px 52px 10px
+
+    .privacy 
+        font-size: 12px
+        line-height: 14px
+
+    .footer
+        margin-top: 6.6%
+        padding: 1.4% 13.9% 1.4% 15.1%
+
+        &_logo
+            width: 43px
+            height: 43px
+        &_nav
+            &_item
+                margin: 0 8px
+
+                span
+                    display: none
+
+                &--partnership
+                    display: block
+                    background: #fff
+                    border-radius: 100px
+                    color: $color-yellow
+                    font-weight: 700
+                    padding: 10px 33px
+                    display: flex
+
+                    .footer_nav_item_img
+                        display: none
+
+                    span
+                        display: initial
+
+                &--enter
+                    background: transparent 
+                    padding: 0
+                    margin: 0
+                    font-size: 0
+                    line-height: 0
+
+                    .footer_nav_item_img
+                        width: 24px
+                        height: 24px
+                        display: block
+
+                        svg path 
+                            fill: #fff
+
+@media (max-width: 768px)
+    .header
+        padding: 1.8% 2% 5%
+
+        &_socials
+            top: 39%
+
+    .title
+        &_icon
+            width: 15px
+            height: 15px
+
+            &--rest
+                margin-left: 4px
+
+            &--world
+                margin-left: 14px
+
+            &--delivery
+                margin-top: 1px
+                margin-left: 3px
+
+            &--qa
+                margin-top: 2px
+
+            &--reviews
+                margin-top: -4px
+                width: 30px
+                height: 30px
+                margin-left: 11px
+
+            &--contact
+                width: 30px
+                height: 30px
+                margin-top: -5px
+                margin-left: 12px
+
+    .main_title
+        &_icon
+            width: 15px
+            height: 15px
+            margin-left: 4px
+            margin-top: 1px
+
+    .rest
+        margin-top: -8.9%
+        padding: 10% 0 8% 14.7%
+
+        &_content
+            margin-top: 12.9%
+
+    .platform
+        margin-top: 1.4%
+
+    .delivery
+        padding: 0 0 11% 14.7%
+
+    .qa
+        margin-top: 1.2%
+
+    .accordeon_item--active 
+        .accordeon_text
+            margin-top: 0
+            padding-top: 13px
+
+    .slide
+        &_text
+            margin: 3% 0 2% 0
+
+        &_name
+            margin-right: 0
+
+    .contact
+        max-width: 53.5%
+        margin-top: -15.8%
+        padding: 3.2% 3.8% 2.1%
+        
+@media (max-width: 576px)
+    .header
+        background: linear-gradient(180deg, #FFAB00 -182.82%, #FFCD68 -100.25%, #FFAB00 54.78%, #FFAB00 95.73%)
+        padding: 3.9% 2% 3.5%
+
+        &_nav
+            padding: 0 7px
+            justify-content: flex-end
+
+            &_item
+                margin: 0 16.5px
+
+        &_socials
+            right: 32px
+            top: 31.2%
+
+        &_button
+            margin: 0 10.8px
+                
+            &--partnership
+                background: transparent
+                padding: 0
+                font-size: 0
+                line-height: 0
+
+                svg path 
+                    fill: #fff
+
+        &_img
+            position: static
+            margin-top: -26px
+
+            &::after
+                display: none
+
+    .content_text
+        font-size: 13px
+        line-height: 20px
+
+    .main_title
+        font-size: 13px
+        margin-bottom: 3.6%
+
+        &_icon
+            width: 15px
+            height: 15px
+            margin: 0
+
+    .download
+        margin-top: 10%
+        padding: 0 32px 0 33px
+
+        &_phone
+            display: none
+
+        &_content
+            max-width: 100%
+
+        .content_text
+            max-width: 100%
+
+    .content_buttons
+        max-width: 100%
+        margin-top: 4%
+
+    .rest
+        background: radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%)
+        margin-top: 182px
+        padding: 5% 0 6.5% 0
+
+        &_phone
+            order: 1
+            max-width: 160px
+            margin: -160px auto 0
+            flex-shrink: 1
+            display: block
+
+        .content_wrap
+            flex-direction: column
+            align-items: center
+
+        &_content
+            order: 2
+            max-width: 100%
+            padding: 0 10.5%
+            margin-top: 3.2%
+
+    .numbers_row
+        max-width: 94%
+        margin-top: 3.7%
+
+    .numbers_item
+        &_count
+            font-size: 13px
+            line-height: 15px
+
+        &_text
+            font-size: 13px
+            line-height: 15px
+
+    .title
+        font-size: 13px
+        line-height: 16px
+
+        &_icon
+            width: 15px
+            height: 15px
+
+            &--rest
+                margin-left: 1px
+                margin-top: 16px
+
+            &--world
+                margin-left: -18px
+                margin-top: 16px
+
+            &--delivery
+                margin-top: 16px
+                margin-left: -69px
+
+            &--qa
+                margin-top: 21px
+                margin-left: -121px
+
+            &--reviews
+                width: 30px
+                height: 30px
+
+            &--contact
+                margin-top: -2px
+                margin-left: 1px
+
+        &--world
+            margin-bottom: 3.6%
+
+        &--rest
+            span
+                display: block
+
+        &--world
+            span
+                display: block
+
+        &--contact
+            display: block
+
+        &--platform
+            margin-bottom: 3.6%
+
+        &--delivery
+            max-width: 49%
+
+        &--qa
+            font-size: 16px
+            line-height: 19px
+            margin-bottom: 4%
+
+        &--reviews
+            font-size: 16px
+            line-height: 19px
+            margin-bottom: 6.6%
+
+        &--contact
+            margin-bottom: 4.9%
+
+    .platform
+        margin-top: 9.4%
+        padding: 0 9.8%
+
+        .content_wrap
+            flex-direction: column
+
+    .map
+        margin: 0
+        margin-top: 3%
+        align-self: flex-start
+        max-width: 61%
+
+    .delivery
+        background: linear-gradient(180deg, #FFAB00 -182.82%, #FFCD68 -100.25%, #FFAB00 54.78%, #FFAB00 95.73%)
+        margin-top: 5.9%
+        position: relative
+        padding: 0px 0 7.5% 10.4%
+
+        &_content
+            max-width: 100%
+            margin-top: 5.5%
+
+        &_pic
+            position: absolute
+            margin-top: -112px
+            right: 32px
+            max-width: 128px
+            z-index: 2
+            display: block
+
+        .content_text
+            max-width: 92%
+
+    .qa
+        margin-top: 8.8%
+        padding: 0 9.7%
+
+    .accordeon
+        width: 100%
+
+        &_title
+            font-size: 13px
+            line-height: 22px
+            padding: 5px 6px 5px 11px
+
+        &_text
+            font-size: 13px
+            line-height: 23px
+
+    .accordeon_item--active 
+        margin-bottom: 14px
+
+        .accordeon_text
+            padding-top: 9px
+            padding-left: 2px
+
+
+    .reviews
+        background: url('../images/reviews_bg_m.jpg') no-repeat
+        background-size: 100%
+        margin-top: 8.5%
+        padding: 0 10% 29% 10.7%
+
+        &_content
+            margin-top: 13.7%
+
+        .content_text
+            font-size: 14px
+            line-height: 21px
+
+    .slide_text
+        font-size: 14px
+        margin: 3% 0 3% 0
+
+    .slide_name
+        margin-right: 0
+
+    .contact
+        box-shadow: none
+        border-radius: 0
+        max-width: 100%
+        padding: 7.4% 10.5% 2.3%
+
+        .content_text
+            font-size: 13px
+            line-height: 20px
+            max-width: 76%
+
+    .footer
+        padding: 6.5% 5.5% 7% 10%
+        margin-top: 5.6%
+
+        &_nav
+            &_item
+                margin: 0 13.5px
+
+                span
+                    display: none
+
+                &--partnership
+                    background: transparent
+                    padding: 0
+                    font-size: 0
+                    line-height: 0
+
+                    svg path
+                        fill: #fff
+
+                    .footer_nav_item_img
+                        display: block
+
+        &_logo
+            width: 24px
+            height: 24px
+        
+
+
+
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+            
+            
+
+        
+
+    
