@@ -113,6 +113,14 @@ img {
 .header_nav_item_img {
   margin-right: 5px;
 }
+.header_nav_item:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
 .header_socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,9 +141,9 @@ img {
   margin-bottom: 0;
 }
 .header_socials_item:hover {
-  -webkit-transform: translateX(-20px);
-      -ms-transform: translateX(-20px);
-          transform: translateX(-20px);
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: all 1.5s ease;
   -o-transition: all 1.5s ease;
   transition: all 1.5s ease;
@@ -203,23 +211,23 @@ img {
 
 @-webkit-keyframes scrollArrow {
   0% {
-    -webkit-transform: translate(0, -40px);
-            transform: translate(0, -40px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(0, 40px);
-            transform: translate(0, 40px);
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
   }
 }
 
 @keyframes scrollArrow {
   0% {
-    -webkit-transform: translate(0, -40px);
-            transform: translate(0, -40px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(0, 40px);
-            transform: translate(0, 40px);
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
   }
 }
 .download {
@@ -644,7 +652,6 @@ img {
       flex-wrap: wrap;
 }
 .contact_form_input {
-  border: none;
   outline: none;
   border-radius: 8px;
   background: #EEEFF2;
@@ -653,6 +660,11 @@ img {
   color: #4E5C66;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  border: 1px solid transparent;
+}
+.contact_form_input:focus {
+  border: 1px solid #FFAB00;
+  background: #fff;
 }
 .contact_form_button {
   color: #fff;
@@ -715,6 +727,14 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+.footer_nav_item:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
 .footer_nav_item_img {
   width: 24px;
   height: 24px;
@@ -726,6 +746,9 @@ img {
 .footer_nav_item--partnership:hover {
   -webkit-box-shadow: 2px 3px 13px 5px rgba(247, 98, 15, 0.52);
           box-shadow: 2px 3px 13px 5px rgba(247, 98, 15, 0.52);
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 .footer_nav_item--enter {
   background: #fff;
@@ -745,6 +768,9 @@ img {
 .footer_nav_item--enter:hover {
   -webkit-box-shadow: 2px 3px 13px 5px rgba(247, 98, 15, 0.52);
           box-shadow: 2px 3px 13px 5px rgba(247, 98, 15, 0.52);
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 
 @media (max-width: 1400px) {
